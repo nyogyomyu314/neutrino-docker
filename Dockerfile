@@ -1,6 +1,6 @@
 # Step 1: ベースイメージの選択
 # ドキュメント記載のUbuntu 20.04とCUDA 12.3、cuDNNをすべて満たす公式イメージを選択
-FROM nvidia/cuda:12.3.0-cudnn8-devel-ubuntu20.04
+FROM nvidia/cuda:12.3.1-cudnn8-devel-ubuntu20.04
 
 # 環境変数を設定
 ENV DEBIAN_FRONTEND=noninteractive
