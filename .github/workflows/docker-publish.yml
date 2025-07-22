@@ -1,8 +1,9 @@
 name: Build and Push Docker Image
 
 on:
-  push:
-    branches: ["main"] # mainブランチにプッシュされたら実行
+  # push:
+  # branches: ["main"] # mainブランチにプッシュされたら実行
+  workflow_dispatch:
 
 jobs:
   build:
