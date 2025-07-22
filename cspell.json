@@ -1,0 +1,20 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "comfyui",
+        "cuda",
+        "cudnn",
+        "devel",
+        "DOCKERHUB",
+        "jupyterlab",
+        "noninteractive",
+        "numpy",
+        "torchaudio",
+        "torchvision"
+    ],
+    "ignoreWords": [],
+    "import": []
+}
