@@ -39,7 +39,8 @@ RUN chmod +x /opt/NEUTRINO/Run.sh
 # Step 6: Pythonライブラリのインストール
 # PyTorchはCUDA 12.1まで公式対応しているため、12.1用のものをインストール
 # (PyTorchが12.3に追いついていない場合でも、通常は下位互換性により動作します)
-RUN pip3 install jupyterlab numpy torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 && \
+  pip3 install jupyterlab numpy
 
 # 作業ディレクトリと起動コマンドの設定
 WORKDIR /opt/NEUTRINO
