@@ -24,13 +24,13 @@ RUN apt-get update && apt-get install -y \
 
 # Step 4: NEUTRINO本体とモデルの導入
 # ※URLは公式ドキュメントやダウンロードページで最新版を確認してください
-RUN wget https://studio-neutrino.com/wp-content/uploads/NEUTRINO-v-0-530.zip -O /tmp/neutrino.zip && \
+RUN wget https://studio-neutrino.com/downloads/v2.7/NEUTRINO-online-v2.7.0.zip -O /tmp/neutrino.zip && \
   unzip /tmp/neutrino.zip -d /opt/ && \
   rm /tmp/neutrino.zip
 
-RUN wget https://studio-neutrino.com/wp-content/uploads/NEUTRINO-Model-Kirino-v-2-0-0.zip -O /tmp/model.zip && \
-  unzip /tmp/model.zip -d /opt/NEUTRINO/model/ && \
-  rm /tmp/model.zip
+# RUN wget https://studio-neutrino.com/wp-content/uploads/NEUTRINO-Model-Kirino-v-2-0-0.zip -O /tmp/model.zip && \
+#   unzip /tmp/model.zip -d /opt/NEUTRINO/model/ && \
+#   rm /tmp/model.zip
 
 # Step 5: 実行権限の付与
 # ドキュメント記載の通り、chmodで実行権限を与える
